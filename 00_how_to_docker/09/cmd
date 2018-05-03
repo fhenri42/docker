@@ -1,0 +1,11 @@
+#docker run -i -t debian  sh
+apt-get update
+apt-get install clang
+apt-get inastall git
+git clone https://github.com/fhenri42/docker && cd docker
+touch lol.c && echo "int main() {return 0;}" > lol.c
+clang lol.c
+git config --global user.email fhenri@student.42.fr
+git add lol.c
+git commit -m "test git hub"
+git push
